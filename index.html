@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>Task Manager</title>
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <script src="scripts/script.js"></script>
 
-    <header>
-        <form action="" id="task-form">
+    <div class="task-form">
+        <h1>Task Manager</h1>
+
+        <form id="new-task-form">
             <input type="text" id="task-input" placeholder="What's your plan ?">
             <input type="submit" value="Add Task" id="task-submit">
         </form>
-    </header>
+    </div>
+
+    <div class="task-list">
+        <h1>Tasks</h1>
+
+        <div class="tasks">
+
+            <div class="task">
+                <div class="content">
+                    <input type="text" class="text" readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
